@@ -1,0 +1,100 @@
+/* Shared layout for simple content pages (Support, Privacy Policy) that
+   reuse styles.css's tokens/header/footer but need plain readable prose
+   instead of the marketing page's section-by-section layout. */
+
+.doc {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: clamp(140px, 16vw, 176px) 24px clamp(90px, 11vw, 130px);
+}
+
+.doc-header { margin-bottom: 48px; }
+
+.doc-header h1 {
+  font-size: clamp(2.6rem, 5.5vw, 3.6rem);
+  font-weight: 690;
+}
+
+.doc-updated {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.doc-body h2 {
+  margin: 44px 0 14px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.doc-body h2:first-child { margin-top: 0; }
+
+.doc-body p,
+.doc-body li {
+  color: var(--ink);
+  font-size: 1rem;
+  line-height: 1.68;
+}
+
+.doc-lead {
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.doc-body ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+.doc-body li + li { margin-top: 8px; }
+
+.doc-body a {
+  color: var(--green);
+  font-weight: 650;
+  text-decoration: underline;
+  text-decoration-color: rgb(25 113 63 / 0.35);
+  text-underline-offset: 2px;
+}
+
+.doc-body a:hover { text-decoration-color: currentColor; }
+
+.faq-list {
+  display: grid;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.faq-list details {
+  padding: 4px 18px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--surface);
+}
+
+.faq-list summary {
+  padding: 16px 0;
+  font-weight: 680;
+  cursor: pointer;
+  list-style: none;
+}
+
+.faq-list summary::-webkit-details-marker { display: none; }
+
+.faq-list summary::after {
+  content: "+";
+  float: right;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.faq-list details[open] summary::after { content: "\2212"; }
+
+.faq-list details p {
+  margin: 0 0 16px;
+  color: var(--muted);
+}
+
+@media (max-width: 700px) {
+  .doc { padding-top: 126px; }
+}

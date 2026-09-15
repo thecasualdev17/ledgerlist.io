@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="LedgerList's privacy policy: what data the app stores, where it stores it, and what (little) leaves your device." />
+    <meta name="theme-color" content="#f7f8f3" />
+    <title>Privacy Policy — LedgerList</title>
+    <link rel="icon" href="./assets/logo-mark.png" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./doc.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="header-sentinel" aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="./index.html" aria-label="LedgerList home">
+        <img src="./assets/logo-mark.png" alt="" width="34" height="34" />
+        <span>LedgerList</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="./index.html#product">Product</a>
+        <a href="./index.html#features">Features</a>
+        <a href="./index.html#roadmap">Roadmap</a>
+        <a href="./support.html">Support</a>
+        <a href="./privacy.html">Privacy</a>
+      </nav>
+      <a class="header-action" href="./index.html#platforms">View platforms</a>
+    </header>
+
+    <main id="main">
+      <article class="doc">
+        <header class="doc-header reveal">
+          <p class="eyebrow">Legal</p>
+          <h1>Privacy Policy</h1>
+          <p class="doc-updated">Last updated: September 16, 2026</p>
+        </header>
+
+        <div class="doc-body reveal">
+          <p class="doc-lead">
+            LedgerList is built around a simple rule: your financial records are
+            yours, and they stay on your device. This page explains exactly what
+            that means in practice.
+          </p>
+
+          <h2>The short version</h2>
+          <ul>
+            <li>LedgerList has no user accounts, no sign-in, and no server that stores your data.</li>
+            <li>Everything you enter — mortgages, payments, expenses, earnings, notes, and receipt attachments — is stored locally on your device only.</li>
+            <li>We don't run analytics, crash reporting, advertising, or tracking of any kind.</li>
+            <li>The only network requests the app makes are to fetch public currency exchange rates, and to check your own transfers when you move data between your own devices.</li>
+          </ul>
+
+          <h2>What LedgerList stores, and where</h2>
+          <p>
+            All records you create are stored in a local database on the device you're
+            using: SQLite on iOS and Android, and your browser's IndexedDB on Web
+            (which also backs the Desktop app). Receipt/proof-of-payment attachments
+            are stored the same way, as part of that local database. None of this
+            data is uploaded to us or to any third party — we don't operate a backend
+            for LedgerList at all.
+          </p>
+
+          <h2>Moving data between your own devices</h2>
+          <p>
+            LedgerList lets you export your data as a JSON backup file, or transfer it
+            directly to another device by scanning a QR code. Both are entirely
+            under your control:
+          </p>
+          <ul>
+            <li><strong>File export/import</strong> — the exported file is saved wherever you choose (your device's storage, or a cloud drive you pick). We never see or receive this file.</li>
+            <li><strong>QR transfer</strong> — your data is encoded directly into the QR code(s) shown on your screen and read by your other device's camera. It never passes through a server; the camera permission is used only to scan these codes.</li>
+          </ul>
+
+          <h2>Third-party services we use</h2>
+          <p>
+            LedgerList fetches currency exchange rates from
+            <a href="https://frankfurter.dev" target="_blank" rel="noopener noreferrer">Frankfurter</a>,
+            a free public mirror of European Central Bank reference rates. This
+            request sends only the currency codes being converted — never any of
+            your financial data, and never anything that identifies you. Rates are
+            cached on your device so the app keeps working offline.
+          </p>
+          <p>
+            We don't use any advertising networks, analytics providers, or crash
+            reporting services in LedgerList.
+          </p>
+
+          <h2>Permissions</h2>
+          <p>
+            LedgerList's mobile apps request camera access solely to scan the QR
+            transfer codes described above. No photo or video is ever stored or
+            transmitted — the camera feed is only decoded locally, in the moment,
+            to read the code.
+          </p>
+
+          <h2>Children's privacy</h2>
+          <p>
+            LedgerList is not directed at children and does not knowingly collect
+            information from anyone, of any age — since we don't collect data from
+            the app at all.
+          </p>
+
+          <h2>Deleting your data</h2>
+          <p>
+            Because everything lives on your device, you're always in full control.
+            Delete individual records inside the app, clear the app's storage from
+            your device's settings, or uninstall the app to remove everything at
+            once. There's no account or server-side copy for us to delete, because
+            none exists.
+          </p>
+
+          <h2>Changes to this policy</h2>
+          <p>
+            If this policy changes, we'll update the "Last updated" date above and
+            post the revised version at this same address.
+          </p>
+
+          <h2>Contact</h2>
+          <p>
+            Questions about this policy or how LedgerList handles data? Reach out at
+            <a href="mailto:thecasualdev@gmail.com">thecasualdev@gmail.com</a>.
+          </p>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <a class="brand" href="./index.html" aria-label="LedgerList home"><img src="./assets/logo-mark.png" alt="" width="30" height="30" loading="lazy" /><span>LedgerList</span></a>
+      <p>Private, local-first financial tracking.</p>
+      <nav aria-label="Footer navigation"><a href="./index.html#product">Product</a><a href="./index.html#features">Features</a><a href="./index.html#roadmap">Roadmap</a><a href="./support.html">Support</a><a href="./privacy.html">Privacy</a></nav>
+    </footer>
+  </body>
+</html>
